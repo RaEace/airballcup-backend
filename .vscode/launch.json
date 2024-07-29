@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CupApplication<cup>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "airballcup.cup.CupApplication",
+            "projectName": "cup",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

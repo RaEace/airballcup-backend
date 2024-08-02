@@ -9,18 +9,18 @@ import lombok.Data;
 @Data
 public class WinnersDTO {
 
-    @JsonProperty("team_name")
+    @JsonProperty("teamName")
     private String teamName;
 
-    @JsonProperty("member1_name")
+    @JsonProperty("firstMember")
     private String firstMember;
 
-    @JsonProperty("member2_name")
+    @JsonProperty("secondMember")
     private String secondMember;
 
-    @JsonProperty("win_date")
+    @JsonProperty("winDate")
     private Date date;
 
-    @JsonProperty("photo_url")
+    @JsonProperty("photoUrl")
     private String photoUrl;
 }

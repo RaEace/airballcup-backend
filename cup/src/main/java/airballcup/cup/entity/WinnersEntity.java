@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,24 +16,25 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "winners")
 public class WinnersEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "team_name", nullable = false)
     private String teamName;
 
-    @Column(nullable = false)
+    @Column(name = "member1_name", nullable = false)
     private String member1Name;
 
-    @Column(nullable = false)
+    @Column(name = "member2_name", nullable = false)
     private String member2Name;
 
-    @Column(nullable = false)
+    @Column(name = "win_date", nullable = false)
     private Date date;
 
-    @Column(nullable = false)
+    @Column(name = "photo_url", nullable = false)
     private String photoUrl;
 }

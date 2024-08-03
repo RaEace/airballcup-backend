@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import airballcup.cup.dto.EventDTO;
 import airballcup.cup.entity.EventEntity;
 import airballcup.cup.repository.EventRepository;
-import static airballcup.cup.service.mapper.EventMapper.mapDtoToEntity;
+import static airballcup.cup.service.mapper.EventMapper.mapDTOToEntity;
 
 @Service
 public class EventService {
@@ -25,7 +25,7 @@ public class EventService {
     }
 
     public EventEntity createEvent(EventDTO eventDTO) {
-        EventEntity eventEntity = mapDtoToEntity(eventDTO);
+        EventEntity eventEntity = mapDTOToEntity(eventDTO);
         return eventRepository.save(eventEntity);
     }
 

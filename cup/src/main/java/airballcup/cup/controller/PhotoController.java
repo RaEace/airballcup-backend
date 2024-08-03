@@ -17,7 +17,7 @@ import airballcup.cup.entity.PhotoEntity;
 import airballcup.cup.service.PhotoService;
 
 @RestController
-@RequestMapping("/photos")
+@RequestMapping("/photo")
 public class PhotoController {
 
     @Autowired

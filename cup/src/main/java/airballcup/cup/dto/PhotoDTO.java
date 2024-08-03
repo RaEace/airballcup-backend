@@ -9,9 +9,6 @@ import lombok.Data;
 @Data
 public class PhotoDTO {
 
-    @JsonProperty("id")
-    private Long id;
-
     @JsonProperty("url")
     private String url;
 

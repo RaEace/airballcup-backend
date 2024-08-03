@@ -17,7 +17,7 @@ import airballcup.cup.entity.EventEntity;
 import airballcup.cup.service.EventService;
 
 @RestController
-@RequestMapping("/events")
+@RequestMapping("/event")
 public class EventController {
 
     @Autowired
